@@ -1,6 +1,6 @@
 # Art of Google Fu
 
-##What would you Google if...
+## What would you Google if...
 
 1. You've recently updated your Macbook to the latest release of macOS and suddenly can no longer push or pull to your github repositories. 
 * updated macos can't github push pull
