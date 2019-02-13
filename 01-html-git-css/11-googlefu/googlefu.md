@@ -14,7 +14,7 @@
 
 3. You're feeling a bit creative and want to give your navigation some cool hover effects
 * css navigation hover effects
-- [result] (https://codepen.io/maheshambure21/pen/QwXaRw)
+- [result](https://codepen.io/maheshambure21/pen/QwXaRw)
 
 4. You've been working with APIs but got this error code when trying to make an AJAX call
 * XMLHttpRequest cannot load http://myApiUrl.io/apiKey=Ajd234mifs04?query=cats No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access.
