@@ -95,6 +95,10 @@ div.about__box--center {
   background-color:red;
   color:white;
 }
+
+.btn_alt {
+  display:none;
+}
   
 }
 
