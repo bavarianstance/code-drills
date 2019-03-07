@@ -70,6 +70,10 @@ body {
   box-shadow: 0 .2rem .4rem rgba(0,0,0,.2);
 }
 
+.btn_alt {
+  display:none;
+}
+
 /* 
 
 It's extremely important to list your media queries in descending order of screen size. 
