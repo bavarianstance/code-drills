@@ -1,7 +1,9 @@
-#Calvin Chau
+Calvin Chau
 <hr>
-##Code-Drills
+Code-Drills
 <hr>
-### Comments
+Comments
+<br>
 * Organized by section.
+<br>
 * Leverage JS ES6 Syntax when possible
