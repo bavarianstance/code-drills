@@ -10,7 +10,24 @@
 //
 // -------------------- Your Code Here --------------------
 
+function compare(num1, num2) {
+  var even1 = (num1 % 2 === 0);
+  var even2 = (num2 % 2 === 0);
+  // if num1 is even and num2 is odd, it comes before num2
+  if (even1 && !even2) {
+    return -1;
+  // if num1 is odd and num2 is even, it comes after num2
+  } else if (!even1 && even2) {
+    return 1;
+  // if num1 and num2 are both even, the smaller number comes first
+  } else if (even1 && even2) {
+    return (even1 - even2);
+  // if num1 and num2 are both odd, the larger number comes first
+  } else {
+    return (even2 - even1)
+  }
 
+}
 
 
 
@@ -24,6 +41,7 @@ function upDownSort(arr) {
   // -------------------- Your Code Here --------------------
 
 
+  return arr.sort(compare);
 
 
 

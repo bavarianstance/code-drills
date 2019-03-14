@@ -55,7 +55,17 @@
 
       // ===================== YOUR CODE HERE ==================
 
-
+        $("#form").on("submit", function (event) {
+        event.preventDefault()
+        var searchTerm = $("#imgQuery").val();
+        $.ajax({
+          url: 'https://api.unsplash.com//photos/random?client_id=835d1b51b693bc9a3d83ce09d0bfb4e7831da20095cd89015fd0659f252b7831b&query=' + searchTerm + '',
+          method: "GET"
+        }).then(function (response) {
+          console.log(response)
+          $(".holder").append("<img class='img' src='" + response.urls.raw + "'/>")
+        });
+      })
 
 
 

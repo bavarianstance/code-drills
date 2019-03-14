@@ -87,7 +87,24 @@
 
       // ===================== YOUR CODE HERE ==================
 
+      var location = $("#location").val()
+      var category = $("#category").val()
 
+        $.ajax({
+          url: 'https://api.yelp.com/v3/businesses/search?term=' + category + '&location=' + location + '',
+          method: "GET",
+                // This solution does not include an API key. You will have to fill in the API key yourself
+          headers: {
+            authorization: "Bearer u94GL1gHllHagHc-SWqFcBuNgsLm-EpZoH8kVCeCTJ4g51NHhxgpBhOMid1Oc8Y_7TXgddr0Abi-CyhEqGw3fvJNLi6tJAlAdZH8o02CNMT0s-if4OBJMnwRfoOEXHYx"
+          }
+        }).then(function (response) {
+          console.log(response)
+
+          for (var i = 0; i < response.businesses.length; i++) {
+            $(".container").append('<img class="thumbnail" src="' + response.businesses[i].image_url + '"/><h2 class="name">' + response.businesses[i].name + '</h2><p class="phone">'+response.businesses[i].display_phone+'</p><p class="address">' + response.businesses[i].location.address1 + ', ' + response.businesses[i].location.city + ' ' + response.businesses[i].location.zip_code + '</p><hr>')
+          }
+
+        });
 
 
 
